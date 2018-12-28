@@ -33,9 +33,9 @@
                 <section class="leftNav">
                     <h3>教学互动</h3>
                     <ul>
-                        <li><a href="QQ.jsp">QQ群</a></li>
-                        <li class="current"><a href="WeChat.jsp">微信群</a></li>
-                        <li><a href="leavenote.jsp">师生互动</a></li>
+                        <li><a href="../jsp/QQ.jsp">QQ群</a></li>
+                        <li class="current"><a href="../servlet/WeChatServlet?type=normalShow">微信群</a></li>
+                        <li><a href="../servlet/TeachingArrangementServlet?type=showLeaveMsg">师生互动</a></li>
                     </ul>
                 </section>
             </div>
@@ -43,9 +43,9 @@
                 <article class="mainContent">
                     <header class="contentNav">
                         <nav class="nav">
-                            <a href="index.jsp">首页</a>·
-                            <a href="QQ.jsp">教学互动</a>·
-                            <a href="">微信群</a>
+                            <a href="../jsp/index.jsp">首页</a>·
+                            <a href="../jsp/QQ.jsp">教学互动</a>·
+                            <a href="../servlet/WeChatServlet?type=normalShow">微信群</a>
                         </nav>
                         <h1>请扫描二维码加入微信群</h1>
                     </header>
