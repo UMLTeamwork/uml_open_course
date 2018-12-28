@@ -75,6 +75,23 @@ public class WeChatServlet extends HttpServlet {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        }else if (type.equals("normalShow")){
+            WeChatService service = new WeChatService();
+            try {
+                List<WeChat> photos = service.showAllPhotos();
+                request.setAttribute("photos", photos);
+                request.getRequestDispatcher("/jsp/WeChat.jsp").forward(request, response);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }else if (type.equals("delete")) {
+            int photo_Id = Integer.parseInt(request.getParameter("photoId"));
+            WeChatService service = new WeChatService();
+            try {
+                service.deletePhoto(photo_Id);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
