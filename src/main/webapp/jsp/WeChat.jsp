@@ -1,4 +1,11 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!doctype html>
 <html>
 <head>
@@ -43,9 +50,9 @@
                         <h1>请扫描二维码加入微信群</h1>
                     </header>
                     <section class="article" style="text-align: center">
-                        <h2 style="margin-top: 5%;letter-spacing:2px">如果人员上限请添加右侧管理员微信进行拉入微信群</h2>
-                        <img src="../images/interaction/wechat.png" style="width:270px;height:370px;">
-                        <img src="../images/interaction/wechat.png" style="width:270px;height:370px;margin-top: 5%;">
+                        <c:forEach var="weChat" items="${requestScope.photos }">
+                            <img src="../${weChat.src}" style="width:270px;height:370px;">
+                        </c:forEach>
                     </section>
                 </article>
             </div>
