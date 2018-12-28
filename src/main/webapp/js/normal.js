@@ -166,7 +166,7 @@ function Rendering(){
 						<a href=\"QQ.jsp\">教学互动</a>\
 						<ul style=\"display: none;\" id=\"eighth\">\
 							<li class=\"detail\"><a href=\"../jsp/QQ.jsp\" style=\"color: #fff;\">QQ群</a></li>\
-							<li class=\"detail\"><a href=\"../jsp/WeChat.jsp\" style=\"color: #fff;\">微信群</a></li>\
+							<li class=\"detail\"><a href=\"../servlet/WeChatServlet?type=normalShow\" style=\"color: #fff;\">微信群</a></li>\
 							<li class=\"detail\"><a href=\"../servlet/TeachingArrangementServlet?type=showLeaveMsg\" style=\"color: #fff;\">师生互动</a></li>\
 						</ul>\
 					</li>\
