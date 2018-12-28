@@ -45,8 +45,8 @@
                     <h3>教学互动</h3>
                     <ul>
                         <li class="current"><a href="QQ.jsp">QQ群</a></li>
-                        <li><a href="WeChat.jsp">微信群</a></li>
-                        <li><a href="leavenote.jsp">师生互动</a></li>
+                        <li><a href="../servlet/WeChatServlet?type=normalShow">微信群</a></li>
+                        <li><a href="../servlet/TeachingArrangementServlet?type=showLeaveMsg">师生互动</a></li>
                     </ul>
                 </section>
             </div>
