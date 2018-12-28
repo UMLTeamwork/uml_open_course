@@ -16,4 +16,8 @@ public class WeChatService {
         WeChatDao Dao = new WeChatDao();
         return Dao.showAllPhoto();
     }
+    public void deletePhoto(int id) throws SQLException, ClassNotFoundException {
+        WeChatDao Dao = new WeChatDao();
+        Dao.deletePhoto(id);
+    }
 }
