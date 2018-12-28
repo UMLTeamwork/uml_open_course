@@ -30,5 +30,9 @@ public class WeChatDao {
         dao.close();
         return weChatList;
     }
-
+    public void deletePhoto(int id) throws SQLException, ClassNotFoundException{
+        DatabaseDao dao = new DatabaseDao();
+        String sql = "delete from uml_teaching_WeChat where Id = "+id;
+        dao.update(sql);
+    }
 }
